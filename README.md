@@ -31,12 +31,23 @@ Cliquez sur le lien de votre ordinateur :
 - sur PC : https://github.com/Thomas8343/conclave-versions/releases/latest/download/CONCLAVE-Windows.exe
 
 Ces liens donnent toujours la dernière version. Le fichier arrive dans le dossier
-**Téléchargements**. Les versions précédentes, et ce que chacune change :
+**Téléchargements**. S'il y en a déjà un du même nom (une version précédente), le nouveau
+prend un numéro, par exemple `CONCLAVE-Windows (1).exe` : prenez toujours le plus récent.
+Les versions précédentes, et ce que chacune change :
 https://github.com/Thomas8343/conclave-versions/releases
+
+Sur PC, Edge peut arrêter le téléchargement en disant que CONCLAVE-Windows.exe « n'est pas
+fréquemment téléchargé ». Pour garder le fichier : sur cette ligne, cliquez les trois points
+(**…**), puis **Conserver** ; dans la fenêtre qui s'ouvre, cliquez **Afficher plus**, puis
+**Conserver quand même**. Chrome peut aussi demander une confirmation : choisissez de
+conserver le fichier.
+<!-- Capture à faire : le panneau des téléchargements d'Edge. Libellés à vérifier sur un
+     Windows 11 en français. -->
 
 ## 3. Installer, sur Mac
 
-1. Double-cliquez sur le fichier `.dmg`. Une fenêtre s'ouvre, avec CONCLAVE et un dossier
+1. Double-cliquez sur le fichier `CONCLAVE-Mac.dmg` que vous venez de télécharger. Une
+   fenêtre s'ouvre, avec CONCLAVE et un dossier
    Applications.
 2. **Faites glisser CONCLAVE sur le dossier Applications.** Attendez la fin de la copie.
 3. Fermez la fenêtre, puis éjectez le disque « CONCLAVE » (dans le Finder, la petite
@@ -51,12 +62,12 @@ plus. Voici le chemin :
 1. Ouvrez le dossier **Applications** et double-cliquez sur **CONCLAVE**. macOS affiche
    un message disant qu'il ne peut pas vérifier l'application. Cliquez **Terminé** (ou
    **OK**).
-   *Capture à faire : le message de macOS.*
+   <!-- Capture à faire : le message de macOS. -->
 2. Ouvrez **Réglages Système** (le menu Pomme, en haut à gauche de l'écran), puis
    **Confidentialité et sécurité**. Faites défiler jusqu'en bas : une ligne dit que
    « CONCLAVE » a été bloqué. Cliquez **Ouvrir quand même**, et donnez le mot de passe de
    votre Mac si on vous le demande.
-   *Capture à faire : la ligne « Ouvrir quand même ».*
+   <!-- Capture à faire : la ligne « Ouvrir quand même ». -->
 3. Double-cliquez de nouveau sur CONCLAVE, et confirmez **Ouvrir**.
 
 Faites-le dans l'heure qui suit le premier essai : passé ce délai, le bouton peut
@@ -67,13 +78,16 @@ macOS peut aussi demander si CONCLAVE peut accéder à votre dossier **Documents
 là qu'il range votre dossier. Répondez **Autoriser**. La question peut revenir après une
 mise à jour de CONCLAVE.
 
+Une fois CONCLAVE installé, mettez le fichier `.dmg` téléchargé à la corbeille : il ne sert
+plus.
+
 ## 4. Installer, sur PC
 
-1. Double-cliquez sur le fichier `CONCLAVE-Windows.exe`.
+1. Double-cliquez sur le fichier `CONCLAVE-Windows.exe` que vous venez de télécharger.
 2. **Windows a protégé votre ordinateur** : ce message bleu vient de ce que CONCLAVE n'est
    pas signé. Cliquez **Informations complémentaires** (selon la version de Windows :
    **Plus d'infos**), puis **Exécuter quand même**.
-   *Capture à faire : le message bleu, et le bouton « Exécuter quand même ».*
+   <!-- Capture à faire : le message bleu, et le bouton « Exécuter quand même ». -->
 3. L'installation se fait pour vous seul, sans mot de passe d'administrateur. L'installateur
    montre quelques pages, l'une après l'autre :
    - le dossier où installer CONCLAVE (seulement la première fois) : gardez celui proposé,
@@ -83,12 +97,14 @@ mise à jour de CONCLAVE.
    - le résumé : cliquez **Installer** ;
    - la fin, avec « Ouvrir CONCLAVE » coché : cliquez **Terminer**, CONCLAVE s'ouvre.
 
-   *Libellés à vérifier sur un vrai PC : « Suivant », « Installer » et « Terminer » viennent
-   de la traduction française de l'installateur (Inno Setup), pas de CONCLAVE. Capture à
-   faire.*
+   <!-- Libellés à vérifier sur un vrai PC : « Suivant », « Installer » et « Terminer »
+        viennent de la traduction française de l'installateur (Inno Setup), pas de
+        CONCLAVE. Capture à faire. -->
 
 Si une fenêtre dit que CONCLAVE est déjà ouvert pendant l'installation d'une nouvelle
 version, laissez l'installateur le fermer (il vous le demande d'abord).
+
+Une fois CONCLAVE installé, mettez le fichier téléchargé à la corbeille : il ne sert plus.
 
 **Si Windows bloque CONCLAVE sans proposer « Exécuter quand même »**, c'est le **contrôle
 intelligent des applications** (Smart App Control) qui est actif sur votre PC. Il bloque
@@ -96,7 +112,7 @@ toute application non signée, sans exception possible pour une seule. Le désac
 dans **Sécurité Windows**, **Contrôle des applications et du navigateur**, **Paramètres du
 contrôle intelligent des applications** ; mais c'est un réglage de sécurité de tout le PC :
 **parlez-en d'abord à la personne qui vous aide**, ne le faites pas seul.
-*Capture à faire : le message de blocage, et le réglage.*
+<!-- Capture à faire : le message de blocage, et le réglage. -->
 
 ## 5. Le premier démarrage : l'assistant
 
@@ -115,7 +131,7 @@ y revenir plus tard : tout reste dans l'onglet **Réglages**.
    cliquez « Lire à nouveau », puis **Télécharger** le modèle. CONCLAVE dit d'abord sa
    taille (plusieurs Go) : gardez l'ordinateur allumé et CONCLAVE ouvert pendant le
    téléchargement. Puis **Appliquer la formule**.
-   *Capture à faire.*
+   <!-- Capture à faire. -->
 3. **Votre fournisseur d'IA** — choisissez-en un : CONCLAVE dit en une phrase ce que chacun
    coûte. Mammouth est en français, avec un abonnement à partir de 12 € par mois.
    Cliquez **Créer un compte** : la page du fournisseur s'ouvre ; créez votre compte, puis
@@ -134,7 +150,7 @@ y revenir plus tard : tout reste dans l'onglet **Réglages**.
    Si votre ordinateur ne fait pas tourner de modèle, CONCLAVE vous propose aussi de
    confier l'entretien et la lecture de vos documents à ce fournisseur ; il vous dit avant
    ce qui sortira de votre ordinateur.
-   *Capture à faire.*
+   <!-- Capture à faire. -->
 4. **Votre budget** — facultatif : un montant par mois. CONCLAVE vous prévient à 80 % et
    vous demande avant de le dépasser.
 5. **Votre téléphone** — facultatif, voir la partie 6.
@@ -174,12 +190,14 @@ ce que vous notez et l'envoie plus tard.
 - **Arrêter CONCLAVE** : onglet **Réglages**, section CONCLAVE, **Quitter CONCLAVE**.
   Fermer l'onglet du navigateur ne l'arrête pas : il continue, prêt pour votre téléphone.
 - **Le petit son** : une réponse peut mettre plusieurs minutes. Un son vous prévient quand
-  elle arrive, si la page de CONCLAVE est restée ouverte (même derrière une autre fenêtre).
+  elle arrive, si la page de CONCLAVE est restée ouverte (avec Safari, il peut falloir
+  qu'elle reste visible à l'écran).
   Pour le couper : onglet **Réglages**, section **Vous**, décochez « Un petit son quand une
   réponse arrive ». **Écouter** le fait entendre.
 - **Une nouvelle version** : quand vous ouvrez les Réglages, CONCLAVE regarde si une version
   plus récente existe et vous le dit, avec le lien de sa page. Il ne télécharge rien tout
-  seul : téléchargez-la comme la première fois (partie 2). **Avant de l'installer, quittez CONCLAVE**
+  seul : téléchargez-la comme la première fois (partie 2), et prenez le fichier le plus
+  récent s'il en reste un ancien dans Téléchargements. **Avant de l'installer, quittez CONCLAVE**
   (onglet Réglages, section CONCLAVE, **Quitter CONCLAVE**), sur Mac comme sur PC : sur Mac,
   sans cela, l'ancienne version continuerait de tourner à la place de la nouvelle ; sur PC,
   l'installateur le fermerait de toute façon, après vous l'avoir demandé. Puis installez-la
