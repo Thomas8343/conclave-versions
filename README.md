@@ -124,7 +124,10 @@ CONCLAVE vérifie chacune et vous dit ce qui reste à faire. Vous pouvez passer 
 y revenir plus tard : tout reste dans l'onglet **Réglages**.
 
 1. **Vous** — votre prénom (les experts vous appellent ainsi ; sans prénom, ils disent « la
-   personne ») et l'endroit où ranger votre dossier. L'emplacement proposé convient.
+   personne ») et l'endroit où ranger votre dossier. L'emplacement proposé convient ; pour
+   en prendre un autre, cliquez **Choisir…** : la fenêtre de votre ordinateur s'ouvre (si
+   vous ne la voyez pas, elle est derrière le navigateur). Choisir un dossier qui contient
+   déjà d'autres fichiers (Documents, par exemple) y crée un dossier « CONCLAVE ».
    Cliquez **Continuer** : il enregistre, et passe à l'étape suivante.
 2. **Votre machine** — ce que CONCLAVE a lu de votre ordinateur, et ce qu'il propose. Si
    votre ordinateur peut faire tourner un modèle d'IA : installez Ollama (le lien est là),
@@ -189,6 +192,12 @@ ce que vous notez et l'envoie plus tard.
   rouvre simplement.
 - **Arrêter CONCLAVE** : onglet **Réglages**, section CONCLAVE, **Quitter CONCLAVE**.
   Fermer l'onglet du navigateur ne l'arrête pas : il continue, prêt pour votre téléphone.
+- **Dicter plutôt qu'écrire** : sous chaque champ où vous écrivez aux experts, le bouton
+  **Dicter** écrit ce que vous dites. La première fois, CONCLAVE dit à qui votre navigateur
+  confie votre voix pour la changer en texte (Google pour Chrome, Microsoft pour Edge, Apple
+  pour Safari), et le navigateur demande l'accès au micro. Rien ne part vers les experts
+  avant que vous ne l'envoyiez. Avec Firefox, qui ne sait pas dicter, utilisez la dictée de
+  l'ordinateur : sur PC, Windows + H ; sur Mac, la touche 🎤 ou deux fois Fn.
 - **Le petit son** : une réponse peut mettre plusieurs minutes. Un son vous prévient quand
   elle arrive, si la page de CONCLAVE est restée ouverte (avec Safari, il peut falloir
   qu'elle reste visible à l'écran).
@@ -206,10 +215,17 @@ ce que vous notez et l'envoie plus tard.
 
 ## 8. En cas de souci
 
-Cliquez **Copier un diagnostic** (en bas de chaque page, ou sous un message d'erreur), puis
-collez-le dans un message à la personne qui vous aide. Ce texte dit la version, votre
-système, les fournisseurs connectés et les dernières erreurs. Il ne contient **ni votre
-clé, ni le contenu de votre dossier, ni le nom de vos fichiers, ni aucun montant**.
+Cliquez **Envoyer un rapport** (en haut de l'onglet Réglages, en bas de chaque page, ou sous
+un message d'erreur). CONCLAVE enregistre le rapport dans votre dossier **Téléchargements**
+(un fichier `conclave-rapport-….txt`) et ouvre votre messagerie : joignez-y ce fichier (le
+trombone), dites en deux mots ce qui s'est passé, et envoyez-le à la personne qui vous aide.
+Si la messagerie ne s'ouvre pas, envoyez ce fichier comme vous le feriez d'une photo.
+
+Le rapport dit la version, votre système, les fournisseurs connectés, les dernières erreurs
+et le journal de ce que CONCLAVE a fait (les demandes, les appels aux modèles, chaque
+erreur et sa cause). Il ne contient **ni votre clé, ni le contenu de vos fiches, ni vos
+questions ou les réponses, ni le nom de vos fichiers, ni aucun montant** : ils y sont
+masqués. Vous pouvez l'ouvrir pour le lire avant de l'envoyer.
 
 Si CONCLAVE ne s'ouvre pas du tout, une fenêtre le dit, avec le nom d'un fichier
 (`journal-du-serveur.txt`) : envoyez ce fichier. Il est dans un dossier que votre
