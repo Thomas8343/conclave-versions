@@ -150,9 +150,11 @@ y revenir plus tard : tout reste dans l'onglet **Réglages**.
      clé Mammouth » ; puis, section Fournisseurs, cliquez **Vérifier** jusqu'à **Prête**.
      Si c'est difficile, demandez à la personne qui vous aide.
 
-   Si votre ordinateur ne fait pas tourner de modèle, CONCLAVE vous propose aussi de
-   confier l'entretien et la lecture de vos documents à ce fournisseur ; il vous dit avant
-   ce qui sortira de votre ordinateur.
+   Si votre ordinateur ne fait pas tourner de modèle (ou si Ollama n'y est pas installé),
+   un bouton apparaît en bas de l'étape dès que votre clé répond : **Confier l'entretien
+   et la lecture à** votre fournisseur. Cliquez-le : CONCLAVE vous dit ce qui sortira de
+   votre ordinateur, puis **Confirmer**. Sans cela, l'entretien ne pourrait pas répondre :
+   CONCLAVE vous le signale en rouge à la dernière étape.
    <!-- Capture à faire. -->
 4. **Votre budget** — facultatif : un montant par mois. CONCLAVE vous prévient à 80 % et
    vous demande avant de le dépasser.
@@ -186,12 +188,38 @@ utilise **Tailscale**, un réseau privé gratuit qui ne relie que vos appareils.
 Le téléphone ne parle qu'à votre ordinateur : ordinateur éteint ou CONCLAVE fermé, il garde
 ce que vous notez et l'envoie plus tard.
 
+**Être prévenu quand un conclave est fini.** Un conclave dure plusieurs minutes. Sur le
+téléphone, ouvrez CONCLAVE **depuis l'écran d'accueil**, onglet **Synthèse**, puis
+**Activer les notifications**, et acceptez la question du téléphone. Une notification
+d'essai arrive aussitôt ; ensuite, vous êtes prévenu quand un compte rendu est prêt. La
+notification part de votre ordinateur et passe, chiffrée, par le service de notifications
+de votre téléphone (Apple ou Google) ; elle ne dit rien de votre dossier. Sur iPhone, cela
+ne marche que depuis l'icône de l'écran d'accueil, pas depuis Safari. Pour arrêter :
+**Ne plus me prévenir**, au même endroit.
+
 ## 7. Au quotidien
 
 - **Ouvrir CONCLAVE** : double-cliquez sur son icône. S'il est déjà ouvert, la page se
   rouvre simplement.
 - **Arrêter CONCLAVE** : onglet **Réglages**, section CONCLAVE, **Quitter CONCLAVE**.
   Fermer l'onglet du navigateur ne l'arrête pas : il continue, prêt pour votre téléphone.
+- **Si une alerte rouge s'affiche en haut d'un écran** (« Ollama ne répond pas… », « Aucune
+  clé… ») : la fonction de cet écran ne peut pas répondre tant que ce n'est pas réglé.
+  Cliquez **Régler dans Réglages**, qui vous y mène.
+- **Dépenser moins par conclave** : onglet **Réglages**, section « Qui fait quoi », **La
+  formule du conseil**. Trois conseils tout faits, avec leur coût estimé pour un conclave :
+  **Économique** (un centime ou deux), **Équilibrée**, **Maximale** (le conseil livré, près
+  d'un euro). Ce sont les mêmes éditeurs, avec des modèles plus ou moins grands : les avis
+  de l'économique sont plus courts et moins fouillés. **Choisir cette formule** change tout
+  le conseil d'un coup ; vous pouvez en changer quand vous voulez.
+- **Un fournisseur qui n'est pas dans la liste** : onglet **Réglages**, section
+  Fournisseurs, **Ajouter un fournisseur**. Collez le lien de son site et cliquez
+  **Chercher** : CONCLAVE dit d'abord ce que la recherche coûtera au plus (de un à
+  quarante centimes, selon le modèle de votre chef d'orchestre), lit quelques pages
+  publiques du site, puis montre une fiche où chaque point est
+  marqué « vérifié », « à vérifier » ou « introuvable ». Regardez surtout l'**adresse de
+  l'API** : c'est là que partira votre clé. **Ajouter ce fournisseur**, puis saisissez sa
+  clé comme pour les autres. Il se retire de la même façon : **Retirer ce fournisseur**.
 - **Dicter plutôt qu'écrire** : sous chaque champ où vous écrivez aux experts, le bouton
   **Dicter** écrit ce que vous dites. La première fois, CONCLAVE dit à qui votre navigateur
   confie votre voix pour la changer en texte (Google pour Chrome, Microsoft pour Edge, Apple
@@ -203,10 +231,10 @@ ce que vous notez et l'envoie plus tard.
   qu'elle reste visible à l'écran).
   Pour le couper : onglet **Réglages**, section **Vous**, décochez « Un petit son quand une
   réponse arrive ». **Écouter** le fait entendre.
-- **Une nouvelle version** : quand vous ouvrez les Réglages, CONCLAVE regarde si une version
-  plus récente existe et vous le dit, avec le lien de sa page. Il ne télécharge rien tout
-  seul : téléchargez-la comme la première fois (partie 2), et prenez le fichier le plus
-  récent s'il en reste un ancien dans Téléchargements. **Avant de l'installer, quittez CONCLAVE**
+- **Une nouvelle version** : à son lancement, CONCLAVE regarde si une version plus récente
+  existe. Si oui, **Mise à jour disponible** s'affiche sous les onglets : cliquez dessus,
+  puis **Télécharger la version…**. Il ne l'installe pas tout seul : le fichier arrive dans
+  Téléchargements (prenez le plus récent s'il en reste un ancien). **Avant de l'installer, quittez CONCLAVE**
   (onglet Réglages, section CONCLAVE, **Quitter CONCLAVE**), sur Mac comme sur PC : sur Mac,
   sans cela, l'ancienne version continuerait de tourner à la place de la nouvelle ; sur PC,
   l'installateur le fermerait de toute façon, après vous l'avoir demandé. Puis installez-la
@@ -248,6 +276,10 @@ Le fichier `journal-du-serveur.txt` est là : joignez-le à votre message.
 - Sous Windows : une pièce photographiée se lit (la reconnaissance de texte de Windows lit
   le français s'il est installé) ; un PDF se lit.
 - Le téléphone ouvre la page par le QR code, avec un cadenas dans la barre d'adresse.
+- Depuis l'écran d'accueil du téléphone, « Activer les notifications » fait arriver la
+  notification d'essai ; Réglages, section Téléphone, dit alors « 1 téléphone sera prévenu ».
+- Sans Ollama : l'écran de l'entretien montre l'alerte rouge, et l'assistant propose de
+  confier l'entretien au fournisseur.
 - « Quitter CONCLAVE » l'arrête, et un double-clic le rouvre.
 - Le diagnostic copié ne contient rien de ce qui est promis.
 - Depuis le code, `python -m conclave.application --verifier` contrôle une installation
